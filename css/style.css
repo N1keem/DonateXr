@@ -1,0 +1,805 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* изначальные размеры для сайта */
+body {
+    height: 5377px;
+    width: 100%;
+}
+
+/* --------------------header-верхушка сайта--------------------- */
+
+header {
+    height: 117px;
+    width: 100%;
+    background-color: #F7F7F7;
+    position: relative;
+}
+
+/* надпись DonateX */
+.logo {
+    font-family: 'nexa_boldregular', Arial, sans-serif;
+    font-size: 30px;
+    padding-top: 46px;
+    padding-bottom: 41px;
+    margin-left: 105px;
+    width: 125px;
+}
+
+/* навигация по сайту (кнопки по середине) */
+.head {
+    position: absolute;
+    left: 495px;
+    top: 51px;
+    right: 494px;
+    bottom: 46px;
+    height: 20px;
+}
+
+.head__center {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'nowregular', Arial, sans-serif;
+}
+
+.info {
+    font-size: 16px;
+    position: relative;
+}
+
+/* анимация для навигации */
+.info::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -9px;
+    height: 2px;
+    width: 100%;
+    background-color: #FF5D24;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: left center;
+}
+
+.info:hover::after,
+.info:focus::after {
+    transform: scaleX(1);
+}
+
+/* кнопка Donate Now */
+.donate-now {
+    position: absolute;
+    width: 126px;
+    height: 43px;
+    background-color: #FF5D24;
+    color: #FFFFFF;
+    border-radius: 5px;
+    right: 100px;
+    top: 39px;
+    font-family: 'nowregular', Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease-in-out;
+}
+
+/* анимация к кнопке Doante Now */
+.donate-now:hover,
+.donate-now:focus {
+    background-color: #ff885d;
+    color: black;
+}
+
+/* ---------------------------main----------------------------- */
+
+/* --------Первая секция-------- */
+/* первая большая надпись на вверху сайта */
+.big-title {
+    font-size: 65px;
+    font-family: 'nexa_boldregular', Arial, sans-serif;
+    width: 563px;
+    margin-top: 62px;
+    margin-left: 102px;
+    position: relative;
+}
+
+.big-title span {
+    color: #FF5D24;
+}
+
+/* маленькая надпись в начале сайта справа */
+.small-title {
+    position: absolute;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'nowmedium', Arial, sans-serif;
+    width: 466px;
+    top: 222px;
+    right: 99px;
+}
+
+/* ---------Вторая секция--------- */
+/* картинка с афроамериканцем */
+.afro {
+    margin-left: 105px;
+    margin-top: 53px;
+}
+
+/* --создание окошек рядом с большой фотографией афроамериканца-- */
+.become-volunteer {
+    margin-left: 75%;
+    margin-top: -493px;
+}
+
+.quick-fundraise {
+    margin-left: 228px;
+    margin-top: -10px;
+}
+
+.white-rect {
+    width: 314px;
+    height: 360px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 0px 0px 1px black;
+}
+
+.img-volunteer {
+    border-radius: 30px;
+    position: absolute;
+    top: 29px;
+    left: 28px;
+    width: 258px;
+    height: 218px;
+}
+
+.img-pig {
+    border-radius: 30px;
+    position: absolute;
+    top: 29px;
+    left: 28px;
+    width: 258px;
+    height: 218px;
+}
+
+.circle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    top: 214px;
+    left: 124px;
+}
+
+.circle1 {
+    background-color: #56b9b4b0;
+}
+
+.circle2 {
+    background-color: #f4633fb4;
+}
+
+.white-rect__text {
+    position: absolute;
+    font-size: 24px;
+    font-family: 'nexa_boldregular', Arial, sans-serif;
+    color: #FF5D24;
+    bottom: 40px;
+    left: 51px;
+}
+
+/* точки за свинкой копилкой */
+.dots {
+    margin-top: -92px;
+    margin-left: 197px;
+}
+
+/* закрученная оранжевая стрелка */
+.vector {
+    margin-top: -290px;
+    display: flex;
+    justify-content: right;
+    margin-right: 130px;
+}
+
+/* чиселки под фотками */
+.numbers {
+    display: flex;
+    width: 430px;
+    height: 95px;
+}
+
+.numbers__text {
+    width: 88px;
+    height: 95px;
+    display: flex;
+    margin-left: 44px;
+    font-size: 16px;
+    font-family: 'nowregular', Arial, sans-serif;
+}
+
+.numbers__redact {
+    display: flex;
+    justify-content: right;
+    margin-top: -20px;
+    margin-right: 400px;
+}
+
+.numbers span {
+    font-size: 50px;
+    font-family: 'nexa_boldregular', Arial, sans-serif;
+}
+
+.num {
+    color: #FF5D24;
+}
+
+.stick {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 49px;
+    margin-top: 23px;
+}
+
+/* -------Третья секция------- */
+.about-us__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* картинка с черной девочкой */
+.blackgirl {
+    margin-top: 195px;
+}
+
+/* серый прямоугольник за картинкой */
+.about__rectangle {
+    width: 635px;
+    height: 286px;
+    background-color: #F7F7F7;
+    margin-top: -250px;
+}
+
+/* секция About */
+.about {
+    margin-top: -500px;
+    margin-left: 806px;
+    width: 530px;
+    height: 398px;
+}
+
+.about__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 118px;
+    height: 39px;
+    background-color: #EFEFEF;
+    color: #FF5D24;
+    font-family: 'nowregular', Arial, sans-serif;
+    font-size: 23px;
+}
+
+.about__text-big {
+    font-size: 50px;
+    font-family: 'nexa_boldregular', Arial, sans-serif;
+    margin-top: 39px;
+}
+
+.about__text-small {
+    font-size: 16px;
+    font-family: 'nowregular', Arial, sans-serif;
+    margin-top: 33px;
+}
+
+.about__btn {
+    margin-top: 46px;
+    font-size: 16px;
+    font-family: 'nowregular', Arial, sans-serif;
+    width: 149px;
+    height: 48px;
+    color: #FFFFFF;
+    background-color: #FF5D24;
+    transition: all 0.3s ease;
+}
+
+/* анимация для кнопки */
+.about__btn:hover,
+.about__btn:focus {
+    border-radius: 15px;
+    background-color: #ff885d;
+    color: black;
+}
+
+/* --------Четвертая секция--------- */
+.events__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* большое общее окно со всеми модулями */
+.events {
+    margin-top: 280px;
+    width: 1229px;
+    height: 666px;
+}
+
+/* надпись Our Couses */
+.events__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 133px;
+    height: 39px;
+    font-size: 23px;
+    font-family: 'nowregular', Arial, sans-serif;
+    color: #FF5D24;
+    background-color: #EFEFEF;
+}
+
+/* надписи под Our Couses */
+.events__first-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 39px;
+}
+
+.first-text__title {
+    font-size: 50px;
+    font-family: 'nexa_boldregular', Arial, sans-serif;
+}
+
+.first-text__service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 366px;
+}
+
+.first-text__service img {
+    width: 24px;
+    height: 24px;
+}
+
+.first-text__service p {
+    font-size: 24px;
+    font-family: 'nowregular', Arial, sans-serif;
+}
+
+/* карточки */
+.events__nameplates {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 74px;
+}
+
+.nameplate {
+    width: 369px;
+    height: 405px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 1px black;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 41px;
+    margin-top: 51px;
+    width: 84px;
+    height: 84px;
+    border-radius: 20px;
+}
+
+.water {
+    background-color: #F4643F;
+}
+
+.medical {
+    background-color: #F0C24A;
+}
+
+.education {
+    background-color: #56B9B4;
+}
+
+.card__title {
+    font-size: 24px;
+    font-family: 'nexa_boldregular', Arial, sans-serif;
+    margin-top: 38px;
+    margin-left: 40px;
+}
+
+.card__text {
+    font-size: 18px;
+    font-family: 'nowregular', Arial, sans-serif;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.card__btn {
+    margin-top: 40px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 30px;
+    background-color: #FFFFFF;
+    transition: all 0.2s ease;
+}
+
+.card__btn svg {
+    margin-left: 5px;
+    color: #FFFFFF;
+}
+
+.card__btn p {
+    font-size: 14px;
+    font-family: 'nowregular', Arial, sans-serif;
+}
+
+/* анимация для кнопки */
+.card__btn:hover,
+.card__btn:focus {
+    background-color: #FF5D24;
+    color: #FFFFFF;
+}
+
+/* ------------Пятая секция----------- */
+.about-us-2__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#about-us-2 {
+    position: relative;
+    width: 1267px;
+    height: 601px;
+    margin-top: 300px;
+}
+
+.about-us-2__rect {
+    width: 635px;
+    height: 286px;
+    background-color: #F7F7F7;
+    margin-top: -250px;
+}
+
+.about-us-2__img {
+    position: absolute;
+    width: 635px;
+    height: 601px;
+    bottom: 100px;
+    right: 0px;
+}
+
+.about-us-2__img img {
+    border-radius: 50% 50% 0 0;
+    margin-left: 40px;
+}
+
+.aboutUs-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 118px;
+    height: 39px;
+    background-color: #EFEFEF;
+    color: #FF5D24;
+    font-family: 'nowregular', Arial, sans-serif;
+    font-size: 23px;
+}
+
+.aboutUs-2__title {
+    font-size: 50px;
+    font-family: 'nexa_boldregular', Arial, sans-serif;
+    margin-top: 39px;
+}
+
+.aboutUs-2__text {
+    font-size: 16px;
+    font-family: 'nowregular', Arial, sans-serif;
+    margin-top: 33px;
+}
+
+.about-us-2__btn {
+    margin-top: 46px;
+    font-size: 16px;
+    font-family: 'nowregular', Arial, sans-serif;
+    width: 149px;
+    height: 48px;
+    color: #FFFFFF;
+    background-color: #FF5D24;
+    transition: all 0.3s ease;
+}
+
+/* анимация для кнопки */
+.about-us-2__btn:hover,
+.about-us-2__btn:focus {
+    border-radius: 15px;
+    background-color: #ff885d;
+    color: black;
+}
+
+/* -----------Шестая секция----------- */
+.our-couses__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#our-couses {
+    width: 1205px;
+    height: 741px;
+    margin-top: 100px;
+}
+
+.couses__center {
+    display: flex;
+    justify-content: center;
+}
+
+.couses__table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 133px;
+    height: 39px;
+    background-color: #EFEFEF;
+    color: #FF5D24;
+    font-size: 23px;
+    font-family: 'nowregular', Arial, sans-serif;
+}
+
+.couses__text-big {
+    font-size: 50px;
+    font-family: 'nexa_boldregular', Arial, sans-serif;
+    margin-top: 39px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.couses__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 74px;
+}
+
+.card {
+    width: 369px;
+    height: 480px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 1px black;
+}
+
+.card img {
+    border-radius: 20px;
+    margin-top: 18px;
+    margin-left: 18px;
+}
+
+.card-title {
+    color: #FF5D24;
+    font-family: 'nowmedium', Arial, sans-serif;
+    font-size: 19px;
+    margin-left: 29px;
+    margin-top: 20px;
+}
+
+.card-text-big {
+    font-family: 'nexa_boldregular', Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 29px;
+    margin-top: 14px;
+}
+
+.card-text-small {
+    display: flex;
+    font-family: 'nowregular', Arial, sans-serif;
+    font-size: 19px;
+    margin-top: 19px;
+    margin-left: 29px;
+    color: #959595;
+}
+
+.card-text-small__marg {
+    margin-left: 10px;
+}
+
+.couses__btn {
+    width: 90px;
+    height: 32px;
+    border-radius: 5px;
+    margin-top: 17px;
+    margin-left: 29px;
+    font-size: 16px;
+    font-family: 'nowregular', Arial, sans-serif;
+    background-color: #FFFFFF;
+    border: none;
+    box-shadow: 0px 0px 1px black;
+    transition: all 0.3s ease;
+}
+
+.btn__orange {
+    color: #FFFFFF;
+    background-color: #FF5D24;
+}
+
+.couses__btn:hover,
+.couses__btn:focus {
+    background-color: #ff885d;
+    color: black;
+}
+
+/* -----------Седьмая секция--------- */
+.help__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 124px;
+}
+
+.help {
+    width: 1206px;
+    height: 349px;
+    border-radius: 20px;
+}
+
+.help__img {
+    background-color: #252525;
+    border-radius: 20px;
+    border: none;
+    z-index: -1;
+}
+
+.help__img img {
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.help__text-big {
+    position: relative;
+    color: #FFFFFF;
+    font-family: 'nowregular', Arial, sans-serif;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    margin-top: -300px;
+    z-index: 100;
+}
+
+.help__text-small-1 {
+    position: relative;
+    color: #FFFFFF;
+    font-family: 'nowregular', Arial, sans-serif;
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    margin-top: 22px;
+}
+
+.help__text-small-2 {
+    position: relative;
+    color: #FFFFFF;
+    font-family: 'nowregular', Arial, sans-serif;
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    margin-top: 8px;
+}
+
+.help__btn__wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 31px;
+}
+
+.help__btn {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    background-color: #FF5D24;
+    z-index: 100;
+    transition: all 0.2s ease;
+}
+
+.help__btn:hover,
+.help__btn:focus {
+    background-color: #ff885d;
+}
+
+
+@media (max-width: 1355px) {
+    .img__wrapper {
+        display: none;
+    }
+    .about {
+        margin: 0;
+        margin-top: 90px;
+    }
+    .about__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1275px) {
+    .afro img {
+        display: none;
+    }
+    .become-volunteer {
+        margin: 0px;
+        margin-bottom: 15px;
+    }
+    .become-volunteer__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .vector {
+        display: none;
+
+
+    }
+    .quick-fundraise__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .quick-fundraise {
+        margin: 0;
+    }
+    .dots {
+        display: none;
+    }
+    .numbers__redact__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .numbers__redact {
+        margin: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1255px) {
+    .events__first-text {
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .events__nameplates__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1225px) {
+    .head {
+        left: 300px;
+    }
+    .big-title {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 785px) {
+    .logo {
+        margin-left: 20px;
+    }
+    .head {
+        left: 180px;
+    }
+}
+
+@media (max-width: 600px) {
+    .small-title {
+        right: 0px;
+    }
+}
